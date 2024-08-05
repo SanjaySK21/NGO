@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NGO Website </title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <img src="images/logo-1.png" alt="NGO logo" class="logo"/>
+            <nav>
+                <ul>
+                    <li><a href="#homeSection">Home</a></li>
+                    <li><a href="#aboutSection">About Us</a></li>
+                    <li><a href="#programsSection">programs</a></li>
+                    <li><a href="#gallerySection">Gallery</a></li>
+                    <li><a href="#getinvolveSection">Get involved</a></li>
+                    <li><a href="#JoinSection">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="banner" id="homeSection">
+        <div class="container">
+            <div class="banner-content">
+                <h1>PROTECT OUR <span>WILDLIFE</span></h1>
+                <p>
+                    Wildlife is the heart and soul of our planet. They play a crucial role in maintaining ecological balance.
+                    Protecting these creatures is not just about preserving biodiversity; it's about ensuring a sustainable future 
+                    for generations to come. Let's unite to safeguard our wildlife and their habitats. 
+                </p>
+                <button>Donate Now</button>
+            </div>
+        </div>
+    </div>   
+
+
+    
+    <section id="aboutSection">
+        <h2>About Us</h2>
+        <div id="jeepImageSection">
+            <img src="../images/jeep2.jpg" alt="Jeep Image">
+            <div id="aboutContent">
+                <h3>Leave <span>Chance</span></h3>
+                <p>LAST CHANCE, is at the forefront of innovative
+                     wildlife conservation. We have successfully 
+                     implemented drone technology to monitor endangered
+                      species and combat poaching. Our community-based 
+                      conservation programs have empowered local communities 
+                      to become active participants in wildlife protection. By 
+                      creating vital wildlife corridors and engaging the public
+                       through citizen science initiatives, we have made significant
+                        strides in preserving biodiversity.
+                </p>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="donationBox">
+                <div class="title">Give Donation</div>
+                <p> hello donate me</p>
+                <button>
+                    Donate Now
+                </button>
+            </div>
+
+            
+            <div class="VolunteerBox">
+                <div class="title">Become Volunteer</div>
+                <p> hello donate me</p>
+                <button>
+                    Become Now
+                </button>
+            </div>
+
+
+            <div class="ScholarBox">
+                <div class="title">Give Scholarship</div>
+                <p> hello donate me</p>
+                <button>
+                    Give immediately
+                </button>
+            </div>
+        </div>
+        <div class="wildlifeChallenge">
+            WILDLIFE<span> CHALLENGES</span>
+        </div>
+
+        <div class="challengesList">
+            <div class="challenge">
+                <img src="images/CHALLENGES/climate-change.png" alt="Climate Change" />
+                <p>Climate Change: The impact of rising temperatures on wildlife habitats.</p>
+            </div>
+            <div class="challenge">
+                <img src="images/CHALLENGES/deforestation-2.jpg" alt="Deforestation" onerror="this.src='path/to/fallback-image.png';" />
+                <p>Deforestation: The loss of forested areas affecting numerous species.</p>
+            </div>
+            <div class="challenge">
+                <img src="images/CHALLENGES/illegal-hunting.png" alt="Illegal Hunting" />
+                <p>Illegal Hunting: Poaching and its devastating effects on wildlife populations.</p>
+            </div>
+            <div class="challenge">
+                <img src="images/CHALLENGES/wildfires.png" alt="Wildfires"/>
+                <p>Wildfires: The destruction caused by fires and its impact on wildlife.</p>
+            </div>
+            <div class="challenge">
+                <img src="images/CHALLENGES/human-intervention.png" alt="Human Intervention" />
+                <p>Human Intervention: The various ways human activities affect wildlife.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    
+
+    <section class="programs" id="programsSection">
+        <div class="container">
+            <h2 class="sectionTitle">Programs</h2>
+            <div class="boxContainer">
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Wildlife Conservation Awareness Campaign</div>
+                    <div class="donationCount">Donation Goal: <span>$9500</span></div>
+                    <button>Donate Now</button>
+                </div>
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Protect Our Habitats: A Community Initiative</div>
+                    <div class="donationCount">Donation Goal: <span>$8500</span></div>
+                    <button>Donate Now</button>
+                </div>
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Endangered Species Monitoring and Protection Programe</div>
+                    <div class="donationCount">Donation Goal: <span>$8500</span></div>
+                    <button>Donate Now</button>
+                </div>
+                <div class="box">
+                    <div class="cardImage"></div>
+                    <div class="programTitle">Sustainable Wildlife Tourism: Best Practices and Guidelines</div>
+                    <div class="donationCount">Donation Goal: <span>$8500</span></div>
+                    <button>Donate Now</button>
+                </div>
+                <!-- Add more boxes as needed -->
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="gallery" id="gallerySection">
+        <div class="sectionTitle">Gallery</div>
+    </section>
+    
+    <section class="gallery" id="gallerySection">
+        <div class="container">
+           
+            <div class="galleryContainer">
+                <div class="item">
+                    <Span class="title"> Image title</Span>
+                    <img src="images/gallery/11.png" alt=""/>
+                </div>
+
+                <div class="item">
+                    <Span class="title"> Image title</Span>
+                    <img src="images/gallery/22.png" alt=""/>
+                </div>
+
+                <div class="item">
+                    <Span class="title"> Image title</Span>
+                    <img src="images/gallery/33.png" alt=""/>
+                </div>
+
+                <div class="item">
+                    <Span class="title"> Image title</Span>
+                    <img src="images/gallery/44.png" alt=""/>
+                </div>
+
+                <div class="item">
+                    <Span class="title"> Image title</Span>
+                    <img src="images/gallery/55.png" alt=""/>
+                </div>
+
+                <div class="item">
+                    <Span class="title"> Image title</Span>
+                    <img src="images/gallery/666.png" alt=""/>
+                </div>
+
+                <div class="item">
+                    <Span class="title"> Image title</Span>
+                    <img src="images/gallery/77.png" alt=""/>
+                </div>
+
+                <div class="item">
+                    <Span class="title"> Image title</Span>
+                    <img src="images/gallery/88.png" alt=""/>
+                </div>
+
+                <div class="item">
+                    <Span class="title"> Image title</Span>
+                    <img src="images/gallery/99.png" alt=""/>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="getinvolve" id="getinvolveSection">
+        <video autoplay muted loop class="videoPlayer">
+            <source src="video/1.mp4" type="video/mp4"/>
+            your browser does not support HTML mp4 contants.
+        </video>
+        <div class="container">
+            <div class="sectionTitle">get - involve</div>
+
+            <div class="getinvolveContainer">
+                <h3>
+                    <h3>LAST CHANCE</h3>
+                    <strong>We Invite You</strong> to 
+                        <p>
+                            our mission to protect wildlife and conserve natural habitats. Whether you're 
+                            interested in volunteering, donating, or raising awareness, your support makes a
+                             difference. Together, we can safeguard endangered species and their ecosystems. Get 
+                             involved today and help us make a lasting impact on our planet.
+                        </P>
+                        
+                        <button>Explore More!</button>
+                </h3>
+            </div>
+        
+        </div>
+    </section>
+
+
+    
+    <section class="join" id="JoinSection">
+
+        <div class="join-container">
+            <div class="joinTitle">
+                Let's DO It <span>Together</span>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nisi nihil suscipit aliquam neque quis harum voluptates temporibus ipsam. Unde iusto necessitatibus beatae repudiandae sapiente ullam facere reiciendis laudantium aspernatur.
+            </p>
+            <button class="joinNow">JOIN US</button>
+            <button class="adoptBtn">Save WILDLIFE</button>
+        </div>
+        
+        
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="logo-container">
+                <img src="images/logo-1.png" alt="NGO logo" class="logo" />
+            </div>
+            <div class="info">
+                <h2>About LAST CHANCE</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquid, animi vitae dicta obcaecati
+                    numquam officia officiis repellat neque voluptatum maiores necessitatibus tempore quidem sed quasi, 
+                    aperiam sapiente cupiditate corporis!
+                </p>
+                <input type="text" placeholder="Enter your email id" />
+            </div>
+            <div class="links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="#homeSection">Home</a></li>
+                    <li><a href="#aboutSection">About Us</a></li>
+                    <li><a href="#programsSection">Programs</a></li>
+                    <li><a href="#gallerySection">Gallery</a></li>
+                    <li><a href="#getinvolveSection">Get Involved</a></li>
+                    <li><a href="#JoinSection">Join Us</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <h2>Connect with us</h2>
+                <p>Near VIT - VELLORE COLLEGE, KATPADI, VELLORE - 632007</p>
+                <p>lastchance.com</p>
+                <p>(+91) 9876543219</p>
+                <div>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>

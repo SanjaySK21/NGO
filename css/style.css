@@ -1,0 +1,851 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.sectionTitle {
+    width: 300px;
+    border-bottom: 3px solid #e43a47;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 100px 0;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    background-color: #fdfafa; /* Background color */
+    position: fixed;
+    top: 0; /* Position at the top */
+    left: 0; /* Align to the left */
+    z-index: 2; /* Ensure it's on top */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Adjust padding as needed */
+    max-width: 2000px; /* Optional: Adjust max-width */
+    margin: auto; /* Center content horizontally */
+}
+
+.logo {
+    max-width: 321px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    object-fit: contain; /* Adjusts image fit */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+    position: relative;
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+nav li:hover {
+    transform: scale(1.1); /* Slightly enlarge the item on hover */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+nav a:hover {
+    color: #e43a47; /* Optional: Change text color on hover */
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    height: 3px; /* Increased thickness for a bolder underline */
+    background-color: #e43a47; /* Underline color */
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust space between text and underline */
+    width: 0;
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+nav a:hover::after {
+    width: 100%; /* Full underline width on hover */
+}
+
+.banner {
+    min-height: 100vh; /* Ensure full viewport height */
+    width: 100%;
+    background-image: url("../images/Banner/banner11.png");
+    background-size: cover;
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating of the background image */
+    position: relative; /* Ensure it scrolls with the page */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: center; /* Center items vertically */
+    padding: 50px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    color: white; /* Ensure text color contrasts with the background */
+}
+
+h1 {
+    font-size: 4rem; /* Make the font size larger */
+    font-weight: bold; /* Ensure text is bold */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    margin-top: -20px; /* Adjust this value to control the vertical position */
+    margin-bottom: 30px;
+}
+
+h1 span {
+    color: #e43a47; /* Orange color for the span text */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+h1 span:hover {
+    transform: scale(1.1); /* Slightly zoom in on hover */
+}
+
+p {
+    font-size: 2rem; /* Make the font size larger */
+    line-height: 1.5; /* Improve readability */
+    margin-top: 10px; /* Add space above the paragraph */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.banner p {
+    color: wheat;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+
+.banner button {
+    background-color: white;
+    border: 0;
+    outline: none;
+    color: black;
+    padding: 10px 35px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 600; /* Add this line */
+}
+
+.banner button:hover {
+    background-color: #e43a47;
+    transform: scale(1.05); /* Zoom effect */
+    transition: all 0.2s ease-in-out; /* Smooth transition */
+}
+
+/* ABOUT */
+#aboutSection {
+    position: relative;
+    padding: 90px 0; /* Add padding above and below the section */
+    background-color: #f4f4f4; /* Background color */
+    margin-top: 50px; /* Add margin to separate from previous section */
+}
+
+#jeepImageSection {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -10px; /* Adjust if needed to avoid overlap */
+}
+
+#jeepImageSection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#aboutSection {
+    position: relative;
+    padding: 10px 0; /* Add padding above and below the section */
+    background-color: #f4f4f4; /* Background color */
+    margin-top: 50px; /* Add margin to separate from previous section */
+    text-align: center; /* Center align text */
+}
+
+#aboutSection h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    color: #000; /* Ensure the text color is black for visibility */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+#aboutSection h2::after {
+    content: "";
+    display: block;
+    height: 10px;
+    background-color: #e43a47; /* Orange color for the underline */
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 65px;
+    transition: width 0.3s ease;
+}
+
+#aboutSection h2:hover::after {
+    width: 100%;
+}
+
+#aboutSection h2:hover {
+    transform: scale(1.1); /* Slightly zoom in on hover */
+}
+
+#aboutContent {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: white;
+    width: 40%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-shadow: 0 0 2px #000;
+    z-index: 1; /* Ensure text is above the image */
+}
+
+#aboutContent h3 {
+    font-size: 8rem; /* Adjust as needed */
+    margin-bottom: 20px;
+    color: white; /* Text color */
+}
+
+h3 span {
+    color: #e43a47; /* Orange color for the span text */
+}
+
+#aboutSection p {
+    font-size: 1.5rem; /* Adjust as needed */
+    line-height: 1.8;
+    color: white;
+    width: 80%;
+    text-shadow: 0 0 2px #000;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color */
+}
+
+#aboutSection p:hover {
+    color: #e43a47; /* Orange color on hover */
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+#aboutSection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Use space-around or space-evenly for a more compact layout */
+    margin-top: 90px; /* Reduce margin-top to decrease space above the cards */
+    margin-left: 0; /* Remove margin-left to reduce the spacing */
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    /* Removed the fixed height */
+}
+
+#aboutSection .cards > div {
+    width: 380px;
+    background-color: rgb(203, 192, 192);
+    padding: 15px;
+    color: #444;
+    font-weight: bolder;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    height: 250px; /* Set a specific height for the boxes */
+    transition: 0.4s;
+}
+
+#aboutSection .cards > div:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+}
+
+#aboutSection .cards > div .title {
+    font-size: 18px;
+    font-weight: bold; /* Set the font-weight to bold */
+    text-transform: uppercase;
+}
+
+#aboutSection .cards > div button {
+    border: 1px solid black;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: bold;
+    font-weight: bolder;
+}
+
+.wildlifeChallenge {
+    font-size: 4rem; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #000; /* Set text color as needed */
+    margin-top: 140px; /* Add space above the text */
+    margin-left: 5%; /* Align to the left */
+    margin-bottom: 75px;
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.wildlifeChallenge span {
+    color: #e43a47;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+.wildlifeChallenge:hover {
+    transform: scale(1.1); /* Slightly zoom in on hover */
+}
+
+.wildlifeChallenge span:hover {
+    transform: scale(1.1); /* Slightly zoom in on hover */
+}
+
+/* challenges list */
+.challengesList {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0; /* Remove any margin around the list */
+    padding: 0; /* Remove any padding around the list */
+    margin-bottom: 10%;
+}
+
+.challenge {
+    position: relative;
+    width: calc(20% - 1px); /* Adjust width to fit items without gaps */
+    margin: 0; /* Remove margin to avoid gaps */
+    padding: 0; /* Remove padding */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+.challenge img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for transform and filter */
+}
+
+.challenge p {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+/* Ensure images fit within their containers without gaps */
+@media (max-width: 768px) {
+    .challenge {
+        width: calc(50% - 1px); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .challenge {
+        width: calc(100% - 1px); /* Full width on very small screens */
+    }
+}
+
+.challenge:hover img {
+    filter: brightness(50%) sepia(100%) hue-rotate(0deg) saturate(500%) contrast(100%) brightness(150%); /* Apply color change effect */
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.challenge:hover p {
+    color: #e43a47; /* Change text color on hover */
+}
+
+
+/*programs*/
+/* Programs Section */
+/* Programs Section */
+/* Programs Section */
+/* Programs Section */
+.programs {
+    background-color: #e2e2e2;
+    padding: 50px 0; /* Padding for spacing around the section */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+.programs:hover {
+    background-color: #dcdcdc; /* Slightly darker background on hover */
+}
+
+.programs .sectionTitle {
+    display: block;
+    width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+
+.programs .sectionTitle::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #e43a47;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.programs .sectionTitle:hover::after {
+    width: 100%;
+}
+
+.programs .boxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.programs .box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(25% - 30px);
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Ensure absolute elements inside are positioned correctly */
+}
+
+.programs .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.programs .box .programTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.programs .box:hover .programTitle {
+    color: #e43a47;
+}
+
+.programs .box .donationCount {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.programs .box button {
+    margin-top: 20px;
+    background-color: #e43a47;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.programs .box button:hover {
+    background-color: #d32f2f;
+    transform: translateY(-3px);
+}
+
+.programs .box .cardImage {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.programs .box:hover .cardImage {
+    transform: scale(1.05);
+}
+
+.programs .box .cardImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    transition: background 0.3s ease;
+    opacity: 0;
+}
+
+.programs .box:hover .cardImage::after {
+    opacity: 1;
+}
+
+/* Specify background images */
+.programs .boxContainer .box:nth-child(1) .cardImage {
+    background-image: url("../images/programs/1.jpg");
+}
+
+.programs .boxContainer .box:nth-child(2) .cardImage {
+    background-image: url("../images/programs/2.jpg");
+}
+
+.programs .boxContainer .box:nth-child(3) .cardImage {
+    background-image: url("../images/programs/3.jpg");
+}
+
+.programs .boxContainer .box:nth-child(4) .cardImage {
+    background-image: url("../images/programs/4.jpg");
+}
+
+/* Specific hover effect for after pseudo-element */
+.programs .boxContainer .box:hover .cardImage::after {
+    opacity: 1;
+}
+
+.programs .boxContainer .box .programTitle {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+
+.programs .boxContainer .box .donationCount {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-top: 10px;
+}
+
+.programs .boxContainer .box .donationCount span {
+    color: #e43a47;
+}
+
+.programs .boxContainer .box button {
+    position: absolute;
+    left: 50%;
+    background-color: orangered;
+    color: #fff;
+    transform: translate(-50%, 0);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+}
+
+
+/*gallery*/
+.gallery .sectionTitle {
+    font-size: 3rem; /* Make text bigger */
+    font-weight: bold; /* Make text bold */
+    text-align: center; /* Center align text */
+    margin: 0 auto 30px; /* Center the sectionTitle and add margin below */
+    position: relative; /* For positioning the underline effect */
+}
+
+.gallery .sectionTitle::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Adjust position as needed */
+    left: 50%; /* Center underline horizontally */
+    transform: translateX(-50%);
+    width: 100%; /* Full width of the text */
+    height: 4px; /* Height of the underline */
+    background-color: #e43a47; /* Underline color */
+    border-radius: 2px;
+}
+
+
+.gallery .galleryContainer{
+    column-count: 3;
+    column-gap: 20px;
+    margin-top: -10%;
+    font-weight: bolder;
+    font-size: 40%;
+}
+
+.gallery .galleryContainer .item{
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery .galleryContainer img{
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .title{
+    position: absolute;
+    background-color: white;
+    padding: 11px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.4s;
+
+}
+
+.gallery .galleryContainer .item:hover .title{
+    opacity: 1;
+
+}
+
+.gallery .galleryContainer .item:hover img{
+    transform: scale(1.2);
+}
+
+
+/*get involve*/
+
+.getinvolve {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.getinvolve .videoPlayer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+
+.getinvolve .sectionTitle{
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+}
+
+
+.getinvolve .getinvolveContainer{
+    position: absolute;
+    background-color: #00000096;
+    width: 600px;
+    top: 35vh;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    padding: 30px;
+}
+
+.getinvolve .getinvolveContainer h3{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.getinvolve .getinvolveContainer p{
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 0 30px;
+}
+
+.getinvolve .getinvolveContainer button{
+    background-color: #e43a47;
+    border: 0;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+}
+
+/*join us*/
+.join{
+    background-image: url("../images/pattern.jpg");
+    color: #fff;
+    margin-top: 10%;
+}
+.join .joinTitle{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.join .joinTitle span{
+    font-weight: 800;
+}
+
+.join button{
+    padding: 7px 15px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.join button.joinNow{
+    margin-right: 10px;
+    background-color: #424242;
+    color: #fff;
+}
+
+
+.join button.adoptBtn{
+    background-color: gray;
+}
+
+/*footer*//* Footer */
+footer {
+    background: #1c1c1c;
+    color: #fff;
+    padding: 40px 0;
+}
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+footer .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+footer .linksContainer ul{
+    list-style-type: none;
+}
+
+
+footer .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px; /* Adds more space between each section */
+}
+
+footer .logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px; /* Adds space to the right of the logo section */
+}
+
+footer .logo-container img {
+    width: 250px; /* Adjust the size as needed */
+    height: auto;
+}
+
+footer .info {
+    flex: 2;
+    padding: 0 20px; /* Adds space on the left and right of the info section */
+}
+
+footer .links {
+    flex: 1;
+    padding: 0 20px; /* Adds space on the left and right of the links section */
+}
+
+footer .socials {
+    flex: 1;
+    padding-left: 20px; /* Adds space to the left of the socials section */
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Adds more space below the headings */
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px; /* Adds space below each paragraph */
+}
+
+footer .links ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .links ul li {
+    margin-bottom: 10px; /* Adds space below each link */
+}
+
+footer .links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .links ul li a:hover {
+    color: #ff6f61;
+}
+
+footer .socials a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .socials a:hover {
+    color: #ff6f61;
+}
